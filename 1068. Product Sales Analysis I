@@ -1,0 +1,13 @@
+-- select p.product_name, s.year, s.price from Product as p
+-- RIGHT JOIN
+-- Sales as s
+-- ON
+-- p.product_id = s.product_id;
+
+
+-- Another way
+
+select p.product_name, s.year, s.price from
+Product as p, Sales as s
+Where
+p.product_id = s.product_id;
